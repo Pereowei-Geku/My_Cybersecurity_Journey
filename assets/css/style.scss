@@ -1,0 +1,256 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom Professional Styling */
+
+/* Project Showcase Grid */
+.project-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.project-item {
+  border: 2px solid #0d1117;
+  border-radius: 8px;
+  padding: 25px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-color: #00d4ff;
+}
+
+.project-item h3 {
+  color: #0d1117;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.project-item p {
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.project-item strong {
+  color: #0d1117;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00d4ff;
+  color: #0d1117;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #00b8e6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th {
+  background: #0d1117;
+  color: #00d4ff;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background: #f5f5f5;
+}
+
+/* Details/Summary (Screenshot Sections) */
+details {
+  border: 2px solid #0d1117;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px 0;
+  background: #f9f9f9;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0d1117;
+  padding: 10px;
+  background: #e8e8e8;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+summary:hover {
+  background: #00d4ff;
+  color: #0d1117;
+}
+
+details[open] summary {
+  margin-bottom: 15px;
+  background: #00d4ff;
+  color: #0d1117;
+}
+
+/* Screenshot Images */
+details img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+details img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+details em {
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* Code Blocks */
+pre {
+  background: #0d1117;
+  color: #00d4ff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+code {
+  color: #00d4ff;
+  background: #0d1117;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Footer Note */
+.footer-note {
+  margin-top: 50px;
+  padding: 20px;
+  background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 100%);
+  border-radius: 8px;
+  border-left: 4px solid #00d4ff;
+  color: #e8e8e8;
+  text-align: center;
+}
+
+.footer-note p {
+  margin: 10px 0;
+  color: #e8e8e8;
+}
+
+.footer-note em {
+  color: #00d4ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-showcase {
+    grid-template-columns: 1fr;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+  
+  .project-item {
+    padding: 15px;
+  }
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #00d4ff;
+  color: #0d1117;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Headings Enhancement */
+h1 {
+  border-bottom: 3px solid #00d4ff;
+  padding-bottom: 10px;
+  color: #0d1117;
+}
+
+h2 {
+  color: #0d1117;
+  margin-top: 40px;
+  border-left: 4px solid #00d4ff;
+  padding-left: 15px;
+}
+
+h3 {
+  color: #0d1117;
+}
+
+/* Links */
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00b8e6;
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  line-height: 1.8;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #00d4ff;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #555;
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
