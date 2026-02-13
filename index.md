@@ -24,7 +24,7 @@ Enterprise-grade security implementations in Microsoft Azure for Prafydob Corp.
     <h3>Azure Firewall Implementation</h3>
     <p>Deployed centralized network security controls with application and network-layer filtering. Implemented zero-trust architecture with default-deny posture.</p>
     <p><strong>Technologies:</strong> Azure Firewall, Virtual Networks, User-Defined Routes, NSGs</p>
-    <a href="./cloud-security/azure-firewall-implementation/" class="btn">View Project Details →</a>
+    <a href="./cloud-security/azure-firewall/" class="btn">View Project Details →</a>
   </div>
   
   <div class="project-item">
