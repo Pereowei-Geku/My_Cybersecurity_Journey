@@ -1,3 +1,31 @@
-title: My Cybersecurity Portfolio
-description: Cloud Security and Threat Intel Projects
-theme: jekyll-theme-hacker
+# Site Settings
+title: "Cybersecurity Portfolio"
+description: "Professional cloud security, threat intelligence, and network security implementations"
+author: "Geku Pereowei Richard"  # Change this to your actual name
+
+# Theme
+theme: jekyll-theme-cayman
+
+# Enable relative links for nested folders
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+
+# GitHub info (optional - add your info)
+github_username: Pereowei-Geku
+linkedin_username: Pereowei Geku # Change this
+
+# Navigation structure
+include:
+  - index.md
+  - cloud-security/index.md
+  - cloud-security/azure-firewall-implementation/index.md
+  - threat-intelligence/index.md
+
+# Exclude unnecessary files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
