@@ -9,7 +9,7 @@ title: Home
 
 Welcome! I am a cybersecurity enthusiast dedicated to exploring the vast landscape of digital defence. My approach is driven by a deep curiosity about how systems break and a commitment to learning how to fix them. 
 
-While my current projects touch on **Cloud Security** and **Threat Intel**, I view these as building blocks. I am actively expanding my knowledge across the entire "Cyber Stack"—from network defence and ethical hacking to GRC and incident response. This portfolio serves as a living document of my growth, labs, and the technical challenges I tackle along the way.
+While my current projects touch on **Cloud Security** and **Threat Intel**, I view these as building blocks. I am actively expanding my knowledge across the entire "Cyber Stack" from network defence and ethical hacking to GRC and incident response. This portfolio serves as a living document of my growth, labs, and the technical challenges I tackle along the way.
 
 ---
 
@@ -24,7 +24,7 @@ Enterprise-grade security implementations in Microsoft Azure for Prafydob Corp.
     <h3>Azure Firewall Implementation</h3>
     <p>Deployed centralized network security controls with application and network-layer filtering. Implemented zero-trust architecture with default-deny posture.</p>
     <p><strong>Technologies:</strong> Azure Firewall, Virtual Networks, User-Defined Routes, NSGs</p>
-    <a href="./cloud-security/azure-firewall/index.md/" class="btn">View Project Details →</a>
+    <a href="./cloud-security/azure-firewall/" class="btn">View Project Details →</a>
   </div>
   
   <div class="project-item">
