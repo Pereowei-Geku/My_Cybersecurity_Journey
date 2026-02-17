@@ -10,3 +10,4 @@ Detailed implementations of secure cloud infrastructure.
 
 ### 🛠 Active Projects
 * [Azure Firewall Implementation](./azure-firewall/)
+* [Microsoft Defender for Cloud Implementation](./Microsoft defender/)
