@@ -53,17 +53,21 @@ moves Prafydob Corp from reactive to proactive security.
 
 This implementation sits on top of the existing network security
 controls established in previous labs.
-Azure Subscription (Prafydob Corp)
-│
-├── Network Layer (Azure Firewall - Lab 03)
-│     └── Controls what traffic enters and exits
-│
-└── Threat Protection Layer (Defender for Cloud - This Lab)
-└── Monitors what happens inside the environment
-├── Threat Detection
-├── Vulnerability Assessment
-├── Just-in-Time VM Access
-└── File Integrity Monitoring
+
+| Layer | Implementation | Responsibility |
+|-------|---------------|----------------|
+| **Azure Subscription** | Prafydob Corp | Contains all resources |
+| **Network Layer** | Azure Firewall (Lab 03) | Controls what traffic enters and exits |
+| **Threat Protection Layer** | Defender for Cloud (This Lab) | Monitors activity inside the environment |
+
+**Capabilities activated in this layer:**
+
+| Capability | Function |
+|------------|----------|
+| Threat Detection | Identifies suspicious behaviour on servers |
+| Vulnerability Assessment | Scans for security weaknesses |
+| Just-in-Time VM Access | Closes management ports when not in use |
+| File Integrity Monitoring | Detects unauthorised file changes |
 ---
 
 ## 🔧 Implementation Steps
