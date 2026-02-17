@@ -1,0 +1,19 @@
+<div class="page-navigation">
+  <div class="nav-buttons">
+    {% if page.previous_page %}
+    <a href="{{ page.previous_page }}" class="nav-btn nav-prev">
+      ← {{ page.previous_label }}
+    </a>
+    {% endif %}
+
+    <a href="{{ site.baseurl }}/" class="nav-btn nav-home">
+      🏠 Home
+    </a>
+
+    {% if page.next_page %}
+    <a href="{{ page.next_page }}" class="nav-btn nav-next">
+      {{ page.next_label }} →
+    </a>
+    {% endif %}
+  </div>
+</div>
