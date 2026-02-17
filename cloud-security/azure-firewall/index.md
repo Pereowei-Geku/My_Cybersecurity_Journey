@@ -62,7 +62,7 @@ INTERNET
 ### Phase 1: Network Infrastructure
 
 **Virtual Network Creation**
-- Created segmented network with three isolated subnets
+- Created a segmented network with three isolated subnets
 - Configured address space 10.0.0.0/16
 - Established AzureFirewallSubnet with mandatory naming convention
 
@@ -77,9 +77,6 @@ INTERNET
 
 ![Subnet Configuration](./screenshots/03-subnets.png)
 *Three subnets: AzureFirewallSubnet, Workload_SN, and Jump_SN*
-
-![Network Overview](./screenshots/04-network-overview.png)
-*Complete network architecture overview*
 
 </details>
 
@@ -117,9 +114,6 @@ INTERNET
 
 ![Firewall Deployment](./screenshots/08-firewall-deployment.png)
 *Azure Firewall deployment in progress*
-
-![Firewall Overview](./screenshots/09-firewall-overview.png)
-*Deployed firewall with private IP 10.0.1.4*
 
 </details>
 
@@ -175,7 +169,7 @@ INTERNET
   - Port: 53
   - Effect: Enables domain name resolution
 
-**Technical Rationale:** DNS resolution is prerequisite for FQDN-based application rules. Without this network rule, the workload VM cannot resolve domain names, making the application rule ineffective.
+**Technical Rationale:** DNS resolution is a prerequisite for FQDN-based application rules. Without this network rule, the workload VM cannot resolve domain names, making the application rule ineffective.
 
 <details>
 <summary>📸 View Screenshot - Network Rules (1 image)</summary>
@@ -217,7 +211,7 @@ INTERNET
 **Validation:**
 - DNS resolution functioned correctly (Allow-DNS rule operative)
 - Firewall application rule permitted HTTPS traffic to www.bing.com
-- Custom route successfully directed traffic through firewall
+- Custom route successfully directed traffic through the firewall
 - Return traffic properly routed back to VM
 
 <details>
@@ -239,14 +233,14 @@ INTERNET
 **Validation:**
 - Firewall correctly evaluated FQDN against application rule collection
 - No rule matched www.google.com destination
-- Default-deny behavior enforced
-- Connection blocked before reaching internet
+- Default-deny behaviour enforced
+- Connection blocked before reachingthe  internet
 
 <details>
 <summary>📸 View Screenshot - Blocked Access (1 image)</summary>
 
 ![Google Access Blocked](./screenshots/17-google-blocked.png)
-*Connection to www.google.com blocked - default-deny behavior confirmed*
+*Connection to www.google.com blocked - default-deny behaviour confirmed*
 
 </details>
 
@@ -281,7 +275,7 @@ Three isolated subnets with distinct security boundaries
 Workload VM has no public IP, eliminating direct internet exposure
 
 **Layer 3 - Traffic Inspection**  
-User-Defined Routes force all outbound traffic through centralized inspection point
+User-Defined Routes force all outbound traffic through centralised inspection point
 
 **Layer 4 - Application Filtering**  
 FQDN-based rules provide specific web access control
@@ -297,9 +291,9 @@ Jump host pattern provides controlled, auditable administrative access
 ### Zero Trust Principles
 
 - **Default Deny**: Firewall denies all traffic except explicitly allowed
-- **Least Privilege**: Workload systems have minimum necessary network access
+- **Least Privilege**: Workload systems have the minimum necessary network access
 - **Microsegmentation**: Subnet-level isolation with different security policies
-- **Explicit Verification**: Each connection evaluated against defined rules
+- **Explicit Verification**: Each connection is evaluated against defined rules
 
 ---
 
@@ -308,17 +302,17 @@ Jump host pattern provides controlled, auditable administrative access
 ### Technical Insights
 
 **Azure Firewall Architecture**
-- Mandatory subnet naming (AzureFirewallSubnet) is technical requirement, not convention
+- Mandatory subnet naming (AzureFirewallSubnet) is a technical requirement, not a convention
 - Rule processing order: Network rules evaluated before application rules
 - Stateful operation maintains connection state for return traffic
 
 **User-Defined Routing**
 - Next hop virtual appliance enables forced traffic inspection
-- Route tables applied at subnet level for specific control
-- UDRs override default Azure routing behavior
+- Route tables are applied at the subnet level for specific control
+- UDRs override default Azure routing behaviour
 
 **Security Implementation**
-- Multiple independent controls provide defense redundancy
+- Multiple independent controls provide defence redundancy
 - Jump host pattern balances security with operational access
 - Default-deny posture requires intentional action to grant access
 
