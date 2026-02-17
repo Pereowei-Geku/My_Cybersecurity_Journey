@@ -26,36 +26,21 @@ Implemented Azure Firewall as a centralized network security solution to control
 - Establish network-layer rules for DNS resolution
 - Validate security controls through comprehensive testing
 
----
+### How Traffic Flows
 
-## 🏗️ Architecture
+| Layer | Component | Details |
+|-------|-----------|---------|
+| 🌐 **Internet** | External Traffic | All traffic enters and exits through here |
+| ⬇️ | | Filtered and inspected |
+| 🔥 **Azure Firewall** | FW_01 | Private IP 10.0.1.4 - Central inspection point |
+| ⬇️ | | Forced routing via User-Defined Route |
+| 🖥️ **Workload VM** | WorkloadVm | 10.0.2.4 - No public IP, fully protected |
+| 🖥️ **Jump Host VM** | JumpHostVm | 10.0.3.4 - Public IP for admin access only |
 
-### Network Topology
-INTERNET
-                   ↑
-                   │ (Filtered Traffic)
-                   │
-          [Azure Firewall]
-           Private IP: 10.0.1.4
-                   ↑
-                   │ (Forced Routing via UDR)
-       ┌───────────┴───────────┐
-       │                       │
-[Workload VM]           [Jump Host VM]
-10.0.2.4                10.0.3.4
-(No Public IP)          (Public IP Enabled)
-### Infrastructure Components
-
-| Component | Specification | Purpose |
-|-----------|---------------|---------|
-| **Virtual Network** | 10.0.0.0/16 | Foundation network infrastructure |
-| **AzureFirewallSubnet** | 10.0.1.0/26 (64 IPs) | Dedicated firewall subnet (mandatory naming) |
-| **Workload-SN** | 10.0.2.0/24 (251 IPs) | Protected workload environment |
-| **Jump-SN** | 10.0.3.0/24 (251 IPs) | Administrative access zone |
-| **Azure Firewall** | Standard SKU | Centralized security control |
-| **User-Defined Route** | 0.0.0.0/0 → 10.0.1.4 | Force all traffic through firewall |
-
----
+> **How it works:** All traffic from the Workload VM must pass through
+> the Azure Firewall before reaching the internet. The Jump Host
+> provides controlled administrative access into the environment.
+> The Workload VM has no direct internet connection.
 
 ## 🔧 Implementation Steps
 
