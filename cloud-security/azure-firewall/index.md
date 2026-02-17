@@ -14,7 +14,7 @@ title: Azure Firewall Implementation
 
 ## 📋 Project Overview
 
-Implemented Azure Firewall as a centralized network security solution to control and filter inbound and outbound network traffic within a segmented Azure virtual network environment. This project demonstrates the practical application of defence-in-depth principles and zero-trust network architecture.
+Implemented Azure Firewall as a centralised network security solution to control and filter inbound and outbound network traffic within a segmented Azure virtual network environment. This project demonstrates the practical application of defence-in-depth principles and zero-trust network architecture.
 
 ---
 
@@ -52,17 +52,19 @@ Implemented Azure Firewall as a centralized network security solution to control
 - Established AzureFirewallSubnet with mandatory naming convention
 
 <details>
-<summary>📸 View Screenshots - Network Infrastructure (4 images)</summary>
+<summary>📸 View Screenshots - Network Infrastructure (3 images)</summary>
+<div class="screenshot-container">
 
-![Resource Group Creation](./screenshots/01-resource-group.png)
-*Resource group Team4_Lab3 created in East US region*
+<img src="./screenshots/01-resource-group.png" alt="Resource Group Creation" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Resource group Team4_Lab3 created in East US region</em></p>
 
-![Virtual Network Configuration](./screenshots/02-virtual-network.png)
-*Virtual network FW_Vnet with address space 10.0.0.0/16*
+<img src="./screenshots/02-virtual-network.png" alt="Virtual Network Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Virtual network FW_Vnet with address space 10.0.0.0/16</em></p>
 
-![Subnet Configuration](./screenshots/03-subnets.png)
-*Three subnets: AzureFirewallSubnet, Workload_SN, and Jump_SN*
+<img src="./screenshots/03-subnets.png" alt="Subnet Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Three subnets: AzureFirewallSubnet, Workload_SN, and Jump_SN</em></p>
 
+</div>
 </details>
 
 ---
