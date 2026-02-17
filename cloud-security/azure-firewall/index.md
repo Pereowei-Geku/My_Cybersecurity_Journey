@@ -14,7 +14,7 @@ title: Azure Firewall Implementation
 
 ## 📋 Project Overview
 
-Implemented Azure Firewall as a centralized network security solution to control and filter inbound and outbound network traffic within a segmented Azure virtual network environment. This project demonstrates practical application of defense-in-depth principles and zero-trust network architecture.
+Implemented Azure Firewall as a centralized network security solution to control and filter inbound and outbound network traffic within a segmented Azure virtual network environment. This project demonstrates the practical application of defence-in-depth principles and zero-trust network architecture.
 
 ---
 
