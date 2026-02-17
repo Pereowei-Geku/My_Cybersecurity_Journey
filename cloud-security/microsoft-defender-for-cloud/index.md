@@ -79,8 +79,15 @@ Portal search bar. The overview page displayed the current
 security posture dashboard, giving initial visibility into
 the subscription's security status.
 
-**[INSERT SCREENSHOT 1: Microsoft Defender for Cloud overview page]**
-*Caption: Defender for Cloud overview showing current security posture*
+<details>
+<summary>📸 View Screenshot - Defender for Cloud Overview</summary>
+<div class="screenshot-container">
+
+<img src="./screenshots/01-defender-overview.png" alt="Microsoft Defender for Cloud Overview" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Defender for Cloud overview showing current security posture</em></p>
+
+</div>
+</details>
 
 ---
 
@@ -93,8 +100,15 @@ a hierarchical structure representing the Azure tenant. The
 subscription node was expanded to reveal all available
 Defender plan configurations.
 
-**[INSERT SCREENSHOT 2: Environment settings showing subscription hierarchy]**
-*Caption: Environment settings displaying tenant and subscription structure*
+<details>
+<summary>📸 View Screenshot - Environment Settings</summary>
+<div class="screenshot-container">
+
+<img src="./screenshots/02-environment-settings.png" alt="Environment Settings" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Environment settings displaying tenant and subscription structure</em></p>
+
+</div>
+</details>
 
 ---
 
@@ -105,34 +119,62 @@ identified in the Cloud Workload Protection list showing
 a status of Off. This confirmed that enhanced server
 protection was not yet active for the subscription.
 
-**[INSERT SCREENSHOT 3: Defender plans showing Servers status as Off]**
-*Caption: Servers plan in Off state prior to activation*
+<details>
+<summary>📸 View Screenshot - Servers Plan Before Activation</summary>
+<div class="screenshot-container">
 
-The Servers plan was toggled from Off to On. The system
+<img src="./screenshots/03-servers-plan-off.png" alt="Servers Plan Off" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Servers plan in Off state prior to activation</em></p>
+
+</div>
+</details>
+
+The server's plan was toggled from Off to On. The system
 automatically configured Plan 2, the most comprehensive
 protection tier available. Plan 2 was selected because it
 includes advanced capabilities that Plan 1 does not offer.
 
-**[INSERT SCREENSHOT 4: Plan 2 selected and features displayed]**
-*Caption: Defender for Servers Plan 2 selected with full feature set*
+<details>
+<summary>📸 View Screenshot - Plan 2 Features</summary>
+<div class="screenshot-container">
+
+<img src="./screenshots/04-plan2-features.png" alt="Plan 2 Features" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Defender for Servers Plan 2 selected with full feature set</em></p>
+
+</div>
+</details>
 
 The configuration was saved using the Save button at the
 top of the settings page. A success notification confirmed
 the Defender plans were updated successfully.
 
-**[INSERT SCREENSHOT 5: Save confirmation notification]**
-*Caption: Success notification confirming Defender plans updated*
+<details>
+<summary>📸 View Screenshot - Save Confirmation</summary>
+<div class="screenshot-container">
+
+<img src="./screenshots/05-save-confirmation.png" alt="Save Confirmation" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Success notification confirming Defender plans updated</em></p>
+
+</div>
+</details>
 
 ---
 
 ### Phase 4: Verifying the Deployment
 
-The Servers plan entry was checked to confirm the status
-change. The interface now showed the Servers plan as On
+The server's plan entry was checked to confirm the status
+change. The interface now showed the Server's plan as On
 with Plan 2 clearly indicated.
 
-**[INSERT SCREENSHOT 6: Servers plan showing On status with Plan 2]**
-*Caption: Servers plan active with Plan 2 enabled*
+<details>
+<summary>📸 View Screenshot - Servers Plan After Activation</summary>
+<div class="screenshot-container">
+
+<img src="./screenshots/06-servers-plan-on.png" alt="Servers Plan On" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Servers plan active with Plan 2 enabled</em></p>
+
+</div>
+</details>
 
 The Recommendations blade was accessed to observe the
 security features working. The JumpHostVM and WorkloadVM
@@ -141,8 +183,15 @@ with associated risk factors and improvement opportunities.
 This confirmed Defender for Cloud was actively monitoring
 the infrastructure.
 
-**[INSERT SCREENSHOT 7: Recommendations page showing VM risk assessments]**
-*Caption: Active recommendations for JumpHostVM and WorkloadVM*
+<details>
+<summary>📸 View Screenshot - Security Recommendations</summary>
+<div class="screenshot-container">
+
+<img src="./screenshots/07-recommendations.png" alt="Security Recommendations" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Active recommendations for JumpHostVM and WorkloadVM confirming live monitoring</em></p>
+
+</div>
+</details>
 
 ---
 
@@ -157,9 +206,9 @@ intelligence to identify known attack patterns.
 
 ### Vulnerability Assessment
 Virtual machines are automatically scanned for security
-weaknesses including missing patches, outdated software,
+weaknesses, including missing patches, outdated software,
 and misconfigurations. The assessment engine prioritises
-findings so the most critical vulnerabilities are addressed
+findings, so the most critical vulnerabilities are addressed
 first.
 
 ### Just-in-Time VM Access
@@ -216,7 +265,7 @@ assessments within minutes of activation.
 
 ### Subscription-Level Activation is Powerful
 Activating at the subscription level means every new
-virtual machine added to Prafydob Corp's environment
+virtual machine was added to Prafydob Corp's environment
 automatically receives protection. There is no risk of
 new resources being deployed without monitoring.
 
@@ -226,14 +275,14 @@ the network and the internet. Defender for Cloud monitors
 activity within the virtual machines themselves. These
 two controls together create much stronger protection than
 either one alone. A threat that bypasses network rules
-will still be detected by Defender for Cloud's behavioral
+will still be detected by Defender for Cloud's behavioural
 monitoring.
 
 ### Proactive Over Reactive
 The recommendations interface gave an immediate list of
 security improvements with clear priority levels. This
 shifts the team from responding to incidents after they
-happen to addressing weaknesses before attackers can
+happen to address weaknesses before attackers can
 exploit them.
 
 ---
