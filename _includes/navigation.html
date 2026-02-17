@@ -1,0 +1,10 @@
+<nav class="site-nav">
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/" class="nav-logo">🔒 Cybersecurity Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>🏠 Home</a></li>
+      <li><a href="{{ site.baseurl }}/cloud-security/" {% if page.url contains "cloud-security" %}class="active"{% endif %}>☁️ Cloud Security</a></li>
+      <li><a href="{{ site.baseurl }}/threat-intelligence/" {% if page.url contains "threat-intelligence" %}class="active"{% endif %}>🔍 Threat Intelligence</a></li>
+    </ul>
+  </div>
+</nav>
