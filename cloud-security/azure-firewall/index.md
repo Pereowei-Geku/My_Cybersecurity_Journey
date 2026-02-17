@@ -75,13 +75,15 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshots - Virtual Machines (2 images)</summary>
+<div class="screenshot-container">
 
-![Workload VM Configuration](./screenshots/05-workload-vm.png)
-*WorkloadVm with private IP only - no direct internet exposure*
+<img src="./screenshots/05-workload-vm.png" alt="Workload VM Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>WorkloadVm with private IP only - no direct internet exposure</em></p>
 
-![Jump Host VM Configuration](./screenshots/06-jumphost-vm.png)
-*JumpHostVm with public IP for controlled administrative access*
+<img src="./screenshots/06-jumphost-vm.png" alt="Jump Host VM Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>JumpHostVm with public IP for controlled administrative access</em></p>
 
+</div>
 </details>
 
 ---
@@ -90,18 +92,20 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 **Firewall Configuration**
 - Deployed Azure Firewall Standard SKU
-- Created dedicated public IP address (FW_PIP) with static assignment
+- Created a dedicated public IP address (FW_PIP) with static assignment
 - Assigned private IP 10.0.1.4 within AzureFirewallSubnet
 
 <details>
-<summary>📸 View Screenshots - Firewall Setup (3 images)</summary>
+<summary>📸 View Screenshots - Firewall Setup (2 images)</summary>
+<div class="screenshot-container">
 
-![Public IP Configuration](./screenshots/07-public-ip.png)
-*Standard SKU public IP with static assignment for firewall*
+<img src="./screenshots/07-public-ip.png" alt="Public IP Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Standard SKU public IP with static assignment for firewall</em></p>
 
-![Firewall Deployment](./screenshots/08-firewall-deployment.png)
-*Azure Firewall deployment in progress*
+<img src="./screenshots/08-firewall-deployment.png" alt="Firewall Deployment" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Azure Firewall deployment in progress</em></p>
 
+</div>
 </details>
 
 ---
@@ -116,13 +120,15 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshots - Routing Configuration (2 images)</summary>
+<div class="screenshot-container">
 
-![Route Table Configuration](./screenshots/10-route-table.png)
-*Custom route forcing all internet traffic through firewall*
+<img src="./screenshots/10-route-table.png" alt="Route Table Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Custom route forcing all internet traffic through firewall</em></p>
 
-![Subnet Association](./screenshots/11-subnet-association.png)
-*Route table associated with Workload_SN subnet*
+<img src="./screenshots/11-subnet-association.png" alt="Subnet Association" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Route table associated with Workload_SN subnet</em></p>
 
+</div>
 </details>
 
 ---
@@ -139,10 +145,12 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshot - Application Rules (1 image)</summary>
+<div class="screenshot-container">
 
-![Application Rules Configuration](./screenshots/12-application-rules.png)
-*Application rule allowing only www.bing.com access*
+<img src="./screenshots/12-application-rules.png" alt="Application Rules Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Application rule allowing only www.bing.com access</em></p>
 
+</div>
 </details>
 
 ---
@@ -160,10 +168,12 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshot - Network Rules (1 image)</summary>
+<div class="screenshot-container">
 
-![Network Rules Configuration](./screenshots/13-network-rules.png)
-*Network rule permitting DNS queries to external resolvers*
+<img src="./screenshots/13-network-rules.png" alt="Network Rules Configuration" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Network rule permitting DNS queries to external resolvers</em></p>
 
+</div>
 </details>
 
 ---
@@ -178,13 +188,15 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshots - Connection Setup (2 images)</summary>
+<div class="screenshot-container">
 
-![Jump Host RDP](./screenshots/14-rdp-jumphost.png)
-*RDP connection to Jump Host from external workstation*
+<img src="./screenshots/14-rdp-jumphost.png" alt="Jump Host RDP" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>RDP connection to Jump Host from external workstation</em></p>
 
-![Workload VM RDP](./screenshots/15-rdp-workload.png)
-*Internal RDP connection from Jump Host to Workload VM*
+<img src="./screenshots/15-rdp-workload.png" alt="Workload VM RDP" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Internal RDP connection from Jump Host to Workload VM</em></p>
 
+</div>
 </details>
 
 ---
@@ -203,10 +215,12 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshot - Successful Access (1 image)</summary>
+<div class="screenshot-container">
 
-![Bing Access Success](./screenshots/16-bing-success.png)
-*Microsoft Edge successfully loading www.bing.com - application rule working correctly*
+<img src="./screenshots/16-bing-success.png" alt="Bing Access Success" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Microsoft Edge successfully loading www.bing.com - application rule working correctly</em></p>
 
+</div>
 </details>
 
 ---
@@ -225,10 +239,12 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshot - Blocked Access (1 image)</summary>
+<div class="screenshot-container">
 
-![Google Access Blocked](./screenshots/17-google-blocked.png)
-*Connection to www.google.com blocked - default-deny behaviour confirmed*
+<img src="./screenshots/17-google-blocked.png" alt="Google Access Blocked" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Connection to www.google.com blocked - default-deny behaviour confirmed</em></p>
 
+</div>
 </details>
 
 ---
@@ -241,10 +257,12 @@ Implemented Azure Firewall as a centralised network security solution to control
 
 <details>
 <summary>📸 View Screenshot - Blocked Access (1 image)</summary>
+<div class="screenshot-container">
 
-![Microsoft Access Blocked](./screenshots/18-microsoft-blocked.png)
-*Connection to www.microsoft.com also blocked - whitelist model validated*
+<img src="./screenshots/18-microsoft-blocked.png" alt="Microsoft Access Blocked" style="max-width:100%; margin:10px 0; border:1px solid #ddd; border-radius:5px;">
+<p><em>Connection to www.microsoft.com also blocked - whitelist model validated</em></p>
 
+</div>
 </details>
 
 ---
