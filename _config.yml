@@ -1,31 +1,32 @@
-# Site Settings
-title: "Cybersecurity Portfolio"
-description: "Pereowei Richard Geku | Cybersecurity Professional
-author: "Geku Pereowei Richard"  # Change this to your actual name
+title: Cybersecurity Portfolio
+description: Pereowei Richard Geku - Cybersecurity Enthusiast
+author: Pereowei Geku
 
-# Theme
 theme: jekyll-theme-cayman
 
-# Enable relative links for nested folders
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
 
-# GitHub info (optional - add your info)
-github_username: Pereowei-Geku
-linkedin_username: Pereowei Geku # Change this
+github_username: thelordpere
+```
 
-# Navigation structure
-include:
-  - index.md
-  - cloud-security/index.md
-  - cloud-security/azure-firewall-implementation/index.md
-  - threat-intelligence/index.md
+6. **Commit:** `Fix config.yml formatting`
 
-# Exclude unnecessary files
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+---
+
+## **WHAT CAUSED THE ERROR**
+
+The `|` pipe characters inside the description string broke the YAML formatting. YAML uses `|` as a special character for multi-line strings. When Jekyll tried to read the file it got confused at that point and stopped building.
+
+The fix removes the pipe characters and keeps the description as a simple clean string on one line.
+
+---
+
+## **WHAT CHANGED**
+
+The description now reads:
+```
+Pereowei Geku - Cybersecurity Professional specialising in cloud security, threat intelligence, and network security
