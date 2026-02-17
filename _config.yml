@@ -1,32 +1,11 @@
 title: Cybersecurity Portfolio
-description: Pereowei Richard Geku - Cybersecurity Enthusiast
+description: Pereowei Geku - Cybersecurity Professional
 author: Pereowei Geku
-
 theme: jekyll-theme-cayman
-
+github_username: thelordpere
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
-
-github_username: thelordpere
 ```
-
-6. **Commit:** `Fix config.yml formatting`
-
----
-
-## **WHAT CAUSED THE ERROR**
-
-The `|` pipe characters inside the description string broke the YAML formatting. YAML uses `|` as a special character for multi-line strings. When Jekyll tried to read the file it got confused at that point and stopped building.
-
-The fix removes the pipe characters and keeps the description as a simple clean string on one line.
-
----
-
-## **WHAT CHANGED**
-
-The description now reads:
-```
-Pereowei Geku - Cybersecurity Professional specialising in cloud security, threat intelligence, and network security
