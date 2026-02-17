@@ -54,20 +54,61 @@ moves Prafydob Corp from reactive to proactive security.
 This implementation sits on top of the existing network security
 controls established in previous labs.
 
-| Layer | Implementation | Responsibility |
-|-------|---------------|----------------|
-| **Azure Subscription** | Prafydob Corp | Contains all resources |
-| **Network Layer** | Azure Firewall (Lab 03) | Controls what traffic enters and exits |
-| **Threat Protection Layer** | Defender for Cloud (This Lab) | Monitors activity inside the environment |
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Implementation</th>
+      <th>Responsibility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Azure Subscription</strong></td>
+      <td>Prafydob Corp</td>
+      <td>Contains all resources</td>
+    </tr>
+    <tr>
+      <td><strong>Network Layer</strong></td>
+      <td>Azure Firewall (Lab 03)</td>
+      <td>Controls what traffic enters and exits</td>
+    </tr>
+    <tr>
+      <td><strong>Threat Protection Layer</strong></td>
+      <td>Defender for Cloud (This Lab)</td>
+      <td>Monitors activity inside the environment</td>
+    </tr>
+  </tbody>
+</table>
 
 **Capabilities activated in this layer:**
 
-| Capability | Function |
-|------------|----------|
-| Threat Detection | Identifies suspicious behaviour on servers |
-| Vulnerability Assessment | Scans for security weaknesses |
-| Just-in-Time VM Access | Closes management ports when not in use |
-| File Integrity Monitoring | Detects unauthorised file changes |
+<table>
+  <thead>
+    <tr>
+      <th>Capability</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Threat Detection</strong></td>
+      <td>Identifies suspicious behaviour on servers</td>
+    </tr>
+    <tr>
+      <td><strong>Vulnerability Assessment</strong></td>
+      <td>Scans for security weaknesses</td>
+    </tr>
+    <tr>
+      <td><strong>Just-in-Time VM Access</strong></td>
+      <td>Closes management ports when not in use</td>
+    </tr>
+    <tr>
+      <td><strong>File Integrity Monitoring</strong></td>
+      <td>Detects unauthorised file changes</td>
+    </tr>
+  </tbody>
+</table>
 ---
 
 ## 🔧 Implementation Steps
