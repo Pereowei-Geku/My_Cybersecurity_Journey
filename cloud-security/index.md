@@ -8,6 +8,6 @@ title: Cloud Security
 
 Detailed implementations of secure cloud infrastructure.
 
-### 🛠 Active Projects
+### Projects
 * [Azure Firewall Implementation](./azure-firewall/)
 * [Microsoft Defender for Cloud Implementation](./Microsoft-defender-for-cloud/))
