@@ -1,1 +1,19 @@
-
+<div class="breadcrumb">
+  <a href="{{ site.baseurl }}/">🏠 Home</a>
+  {% if page.url contains "cloud-security" %}
+    <span class="separator">›</span>
+    <a href="{{ site.baseurl }}/cloud-security/">Cloud Security</a>
+  {% endif %}
+  {% if page.url contains "threat-intelligence" %}
+    <span class="separator">›</span>
+    <a href="{{ site.baseurl }}/threat-intelligence/">Threat Intelligence</a>
+  {% endif %}
+  {% if page.url contains "azure-firewall" %}
+    <span class="separator">›</span>
+    <span class="current">Azure Firewall Implementation</span>
+  {% endif %}
+  {% if page.url contains "microsoft-defender" %}
+    <span class="separator">›</span>
+    <span class="current">Microsoft Defender for Cloud</span>
+  {% endif %}
+</div>
