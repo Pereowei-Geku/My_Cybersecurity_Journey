@@ -18,7 +18,7 @@ title: Microsoft Defender for Cloud
 ## 📋 Overview
 
 Prafydob Corp's Azure infrastructure needed more than network controls.
-The virtual machines running business operations required active
+The virtual machines running business operations require active
 protection against threats that network rules alone cannot stop.
 This implementation activated Microsoft Defender for Cloud Plan 2
 at the subscription level, providing enterprise-grade threat
@@ -30,9 +30,9 @@ without requiring infrastructure changes.
 ## 🎯 Objectives
 
 - Enable Microsoft Defender for Cloud enhanced security features
-- Activate Defender for Servers Plan 2 at subscription level
+- Activate Defender for Servers Plan 2 at the subscription level
 - Establish continuous vulnerability assessment
-- Enable Just-in-Time VM access to reduce attack surface
+- Enable Just-in-Time VM access to reduce the attack surface
 - Verify active monitoring through the recommendations interface
 
 ---
@@ -41,9 +41,9 @@ without requiring infrastructure changes.
 
 Prafydob Corp processes customer transactions and handles sensitive
 data as an e-commerce business. A network firewall controls
-traffic in and out but cannot detect threats already inside
+traffic in and out, but cannot detect threats already inside
 the environment. Microsoft Defender for Cloud fills this gap
-by continuously monitoring server behavior, scanning for
+by continuously monitoring server behaviour, scanning for
 vulnerabilities, and alerting on suspicious activity. This
 moves Prafydob Corp from reactive to proactive security.
 
