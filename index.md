@@ -31,7 +31,7 @@ Enterprise-grade security implementations in Microsoft Azure for Prafydob Corp.
     <h3>Microsoft Defender for Cloud</h3>
     <p>Enhanced server protection and security posture management with threat detection and vulnerability assessment.</p>
     <p><strong>Technologies:</strong> Microsoft Defender, Azure Monitor, Security Center</p>
-    <a href="./cloud-security/" class="btn">View All Cloud Security Projects →</a>
+    <a href="./cloud-security/microsoft-defender-for-cloud/" class="btn">View Project Details →</a>
   </div>
 </div>
 
