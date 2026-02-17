@@ -262,7 +262,7 @@ Three isolated subnets with distinct security boundaries
 Workload VM has no public IP, eliminating direct internet exposure
 
 **Layer 3 - Traffic Inspection**  
-User-Defined Routes force all outbound traffic through centralised inspection point
+User-Defined Routes force all outbound traffic through a centralised inspection point
 
 **Layer 4 - Application Filtering**  
 FQDN-based rules provide specific web access control
